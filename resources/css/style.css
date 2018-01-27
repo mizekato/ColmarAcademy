@@ -7,6 +7,18 @@ body {
   font-family: "Open-Sans", "Helvetica", "sans-serif";
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+p {
+  font-size: 0.75rem;
+}
 .container {
   max-width: 1024px;
   display: flex;
@@ -110,6 +122,7 @@ header .logo span {
   display: block;
   margin: 2rem 1.5rem;
   width: 60%;
+  border: 2px solid blue;
 }
 
 .image-container img {
@@ -125,7 +138,7 @@ header .logo span {
   justify-content: space-around;
   align-items: flex-start;
   margin-right: 1.5rem;
-  width: 30%;
+  width: 40%;
   height: auto;
   line-height: 1.2;
 }
@@ -190,4 +203,90 @@ header .logo span {
   .content-container h1 {
     margin-bottom: 1.5rem;
   }
+}
+
+/* Information section */
+
+
+#information {
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+
+ .image-container-main {
+  display: block;
+  /*justify-content: flex-start;
+  align-items: flex-start;*/
+  width: 60%;
+  margin: 2rem 1.5rem;
+  border: 1px solid blue;
+
+  /*display: block;
+  width: 100%;
+  height: auto;
+
+  */
+}
+
+.image-container-main img {
+  width: 100%;
+  height: auto;
+}
+
+.content-main {
+  display: block;
+  width: 90%;
+  padding: 2rem 0rem;
+  line-height: 1.2;
+  }
+  .content-main p {
+    padding: 1.5rem 0rem;
+  }
+
+  .content-main span {
+    font-size: 0.5rem;
+  }
+
+.information-column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 2px solid coral;
+  margin-top: 2rem;
+}
+
+.column-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid lightblue;
+}
+
+ #guest  {
+  background-color: lightgrey;
+}
+
+
+.image-container-small {
+  display: block;
+  width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.image-container-small img {
+  width: 100%;
+}
+
+.information-text {
+  width: 65%;
+  height: auto;
+  margin: 0.5rem;
+  line-height: 1.5;
+}
+
+.information-text a{
+  font-size: 0.75rem;
+  color: lightblue;
 }

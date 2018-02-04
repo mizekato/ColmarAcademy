@@ -7,7 +7,8 @@ body {
   font-family: 'Helvetica', "Arial", "sans-serif";
   /*font-family: "Josefin sans", "Helvetica", "sans-serif";*/
   /*background-color: #dfdfdf;*/
-  background-color: #3f7361;
+  /*background-color: #3f7361;*/
+  background-color: #204056;*/
 }
 
 @media only screen and (max-width: 560px) {
@@ -70,8 +71,7 @@ p {
 
 /*Header*/
 header {
-  /*background-color: #dfdfdf;*/
-  background-color: #3f7361;
+  background-color: #204056;
   position: fixed;
   width: 100%;
   top: 0;

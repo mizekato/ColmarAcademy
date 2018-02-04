@@ -306,12 +306,12 @@ header {
   align-items: center;
   justify-content: flex-start;
   border-bottom: 1rem solid white;
-  background-color: #dfdfdf;
+  background-color: #d1d7db;
   margin-right: 1.5rem;
 }
 
  #guest  {
-  background-color: #B2BEB5;
+  background-color: #a4afb7;
 }
 
 
@@ -424,7 +424,7 @@ header {
   height: auto;
   padding: 2rem 0;
   margin: 2rem 2.5rem;
-  background-color: #dfdfdf;
+  background-color: #d1d7db;
   }
 
 .headline {
@@ -497,7 +497,7 @@ header {
     display: flex;
     width: 90%;
     margin: auto;
-    background-color: #dfdfdf;
+    background-color: #d1d7db;
   }
   .course {
     width: 45%;
@@ -625,7 +625,7 @@ align-items: center;
       margin: auto;
     }
   }
-}
+
 @media only screen and (max-width: 560px) {
 
 #thesis .information-column  {

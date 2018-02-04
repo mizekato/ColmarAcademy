@@ -6,7 +6,8 @@ html {
 body {
   font-family: 'Helvetica', "Arial", "sans-serif";
   /*font-family: "Josefin sans", "Helvetica", "sans-serif";*/
-  background-color: #dfdfdf;
+  /*background-color: #dfdfdf;*/
+  background-color: #3f7361;
 }
 
 @media only screen and (max-width: 560px) {
@@ -60,19 +61,17 @@ p {
 }
 
  a:hover {
-  background-color: #FDFD96;
+  background-color: #bddbd0;
 }
  a:active {
-  background-color: #FDFD96;
+  background-color: #bddbd0;
 }
 
-/*h2:hover, h3:hover {
-  background-color: yellow;
-}*/
 
 /*Header*/
 header {
-  background-color: #dfdfdf;
+  /*background-color: #dfdfdf;*/
+  background-color: #3f7361;
   position: fixed;
   width: 100%;
   top: 0;
@@ -207,7 +206,7 @@ header {
 .button {
   display: block;
   width: 45%;
-  background-color: #0d0d0d;
+  background-color: #09100e;
   padding: 0.5rem .75rem;
   margin-top: 1rem;
   text-align: center;
@@ -219,7 +218,7 @@ header {
 }
 
 .button span:hover {
-  color: #FDFD96;
+  color: #bddbd0;
 }
 
 
@@ -435,12 +434,13 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 0;
-  background-color: #0d0d0d;
+  /*background-color: #0d0d0d;*/
+  background-color: #09100e;
   color: white;
   }
 
 .headline:hover {
-    color: #FDFD96;
+    color: #bddbd0;
   }
 
 .course {
@@ -474,13 +474,13 @@ header {
 .description h3 {
   padding: 0.5rem 1rem;
   color: white;
-  background-color: #0d0d0d;
+  background-color: #09100e;
   display: block;
   font-weight: normal;
 }
 
 .description h3:hover {
-  color: #FDFD96;
+  color: #bddbd0;
 }
 
 .description span {
@@ -560,7 +560,7 @@ header {
   }
 
   .description h3:hover {
-    color: #FDFD96;
+    color: #bddbd0;
   }
 }
 

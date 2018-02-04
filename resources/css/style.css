@@ -4,13 +4,26 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Raleway", "Helvetica", "sans-serif";
-  /*background-color: #dfdfdf;*/
+  font-family: 'Helvetica', "Arial", "sans-serif";
+  /*font-family: "Josefin sans", "Helvetica", "sans-serif";*/
+  background-color: #dfdfdf;
+}
+
+@media only screen and (max-width: 560px) {
+  body {
+    background-color: white;
+  }
 }
 
 h1 {
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 2.2rem;
+  /*font-weight: bold;*/
+  text-transform: uppercase;
+  font-family: "Josefin sans", "Helvetica", "sans-serif";
+}
+
+h2 {
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -19,15 +32,25 @@ h3 {
 }
 
 p {
-  font-size: 0.75rem;
-  font-family: "Lora";
+  font-size: 0.85rem;
+  font-family: "Helvetica";
+  line-height: 1.5;
 }
 .container {
-  max-width: 1024px;
+  max-width: 1800px;
   display: flex;
-  margin: 0 1.5rem;
-  /*background-color: white;*/
+  margin: 0.5 1.5rem;
+  background-color: white;
+  margin: 1.5rem auto;
 }
+
+@media only screen and (max-width: 1600px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+
 .black {
   color: black;
 }
@@ -36,25 +59,41 @@ p {
   color: grey;
 }
 
-/*Header*/
+ a:hover {
+  background-color: #FDFD96;
+}
+ a:active {
+  background-color: #FDFD96;
+}
 
+/*h2:hover, h3:hover {
+  background-color: yellow;
+}*/
+
+/*Header*/
 header {
+  background-color: #dfdfdf;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  margin: 0 1.5rem;
+  margin: 0.5 auto;
   background-color: white;
-  font-family: "Raleway", sans-serif;
 }
 
-header .logo {
+.header .logo {
   display: flex;
   align-items: center;
   height: 2rem;
   margin-left: 1.5rem;
 }
-
 
 .logo img {
   padding-right: 0.2rem;
@@ -71,7 +110,7 @@ header .logo {
 }
 
 .menu a {
-  color: gray;
+  color: black;
   font-size: 1rem;
   margin-left: 1rem;
 }
@@ -80,18 +119,29 @@ header .logo {
   display: none;
 }
 
+@media only screen and (max-width: 860px) {
+
+  body {
+    background-color: white;
+  }
+  header {
+    background-color: white;
+    height: 4rem;
+  }
+}
+
 @media only screen and (max-width: 560px) {
 
 
-header .logo span {
+  header .logo span {
     display: none;
   }
 
-.menu ul{
+  .menu ul{
     display: none;
   }
 
-.menu .mobile-menu {
+  .menu .mobile-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,15 +149,15 @@ header .logo span {
     width: auto;
   }
 
-.mobile-menu li {
-  padding: 0 1rem;
+  .mobile-menu li {
+    padding: 0 1rem;
 }
 }
 
 /*Banner*/
 
 .banner {
-  background-color: #b4b4b4;
+  margin-top: 7rem;
 }
 
  #banner {
@@ -133,40 +183,48 @@ header .logo span {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   margin-right: 1.5rem;
+  padding: 4rem 0;
   width: 40%;
   height: auto;
   line-height: 1.2;
 }
 
 .content-container h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
   margin-bottom: 1rem;
-  color: #3c3c3c;
+  color: black;
+  text-align: center;
 }
 
-.content-container h2 {
+.content-container h3 {
   font-size: 1rem;
   color: #3c3c3c;
+  padding-left: 0.5rem;
+  text-align: center;
   }
 
 .button {
   display: block;
-  width: 75%;
-  background-color: #3c3c3c;
-  padding: 0.5rem 1.5rem;
+  width: 45%;
+  background-color: #0d0d0d;
+  padding: 0.5rem .75rem;
   margin-top: 1rem;
   text-align: center;
 }
 
 .button span {
   color: white;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
-@media only screen and (max-width: 560px) {
+.button span:hover {
+  color: #FDFD96;
+}
+
+
+
+@media only screen and (max-width: 860px) {
 
   #banner {
     flex-direction: column;
@@ -174,6 +232,7 @@ header .logo span {
     justify-content: center;
     align-content: center;
     flex: 1 1;
+    margin: 1rem auto;
   }
 
   .image-container {
@@ -197,7 +256,7 @@ header .logo span {
     margin-top: 0.75rem;
   }
 
-  .content-container h1 {
+  .content-container h2 {
     margin-bottom: 1.5rem;
   }
 }
@@ -225,7 +284,7 @@ header .logo span {
 .content-main {
   display: block;
   width: 90%;
-  padding: 2rem 0rem;
+  padding: 2rem 0.5rem;
   line-height: 1.2;
   }
 .content-main p {
@@ -233,7 +292,7 @@ header .logo span {
   }
 
 .content-main span {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
 
 .information-column {
@@ -247,10 +306,13 @@ header .logo span {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
+  border-bottom: 1rem solid white;
+  background-color: #dfdfdf;
+  margin-right: 1.5rem;
 }
 
  #guest  {
-  background-color: lightgrey;
+  background-color: #B2BEB5;
 }
 
 
@@ -273,14 +335,37 @@ header .logo span {
   height: auto;
   margin: 0.5rem;
   line-height: 1.5;
-}
+  }
 
 .information-text a{
   font-size: 0.75rem;
-  color: lightblue;
+  font-style: italic;
+  color: black;
+  border-bottom: 1px dotted black;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+
+  #information {
+    flex-direction: column;
+  }
+  .image-container-main {
+    width: 100%;
+  }
+  .content-main h1{
+    text-align: center;
+  }
+
+  .information-column {
+    width: 90%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 560px) {
+
 
   .image-container-main {
     display: none;
@@ -295,6 +380,7 @@ header .logo span {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
 
   .image-container-small {
@@ -323,10 +409,6 @@ header .logo span {
 
 /*Courses*/
 
-.courses {
-  background-color: lightgray;
-}
-
 #courses {
   display: flex;
   flex-direction: column;
@@ -341,15 +423,25 @@ header .logo span {
   flex: 1 1;
   width: auto;
   height: auto;
+  padding: 2rem 0;
   margin: 2rem 2.5rem;
-}
+  background-color: #dfdfdf;
+  }
 
 .headline {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 2rem 2rem;
-}
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  background-color: #0d0d0d;
+  color: white;
+  }
+
+.headline:hover {
+    color: #FDFD96;
+  }
 
 .course {
   display: flex;
@@ -361,42 +453,80 @@ header .logo span {
 .image-container-course {
   width: 100%;
   height: auto;
+  background-color: black;
+  opacity: 0.9;
 }
 
 .image-container-course img{
   width: 100%;
-  height: auto;
 }
 
 .description {
   background-color: white;
   line-height: 1.2;
-  padding: 1rem 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .description p {
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
 }
 
 .description h3 {
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #0d0d0d;
+  display: block;
+  font-weight: normal;
+}
+
+.description h3:hover {
+  color: #FDFD96;
+}
+
+.description span {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 860px) {
+
+  .headline {
+  width: 100%;
+  }
+  .courses-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    background-color: #dfdfdf;
+  }
+  .course {
+    width: 45%;
+    margin: auto;
+  }
+  .description {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 560px) {
 
-.courses {
+  .courses {
   background-color: white;
 }
-  .headline h1 {
+
+  .headline h2 {
     padding: 1rem 1rem;
-    margin-top: 1rem;
+    background-color: white;
+    color: black;
   }
+
   .courses-container {
     flex-direction: column wrap;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    height: auto;
+    height: auto;;
+    background-color: white;
   }
 
   .course {
@@ -405,26 +535,32 @@ header .logo span {
     height: auto;
     margin: 0.5rem 0.5rem;
   }
+
   .image-container-course {
     display: none;
   }
 
-  .description {
-    background-color: lightgray;
-    }
-
   .description span {
     display: none;
   }
+
   .description p {
     display: none;
   }
+
   .description h3 {
-    display: inline;
+    display: block;
     padding-top: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1.5rem;
-    margin: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    width: 90%;
+    text-align: left;
+  }
+
+  .description h3:hover {
+    color: #FDFD96;
   }
 }
 
@@ -479,6 +615,17 @@ align-items: center;
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 860px) {
+  .thesis-container {
+    flex-direction: column;
+    }
+    .video-main {
+      width: 90%;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
 @media only screen and (max-width: 560px) {
 
 #thesis .information-column  {
@@ -495,9 +642,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
-
 .menu-footer {
   margin: 1rem 1.5rem;
 }
@@ -506,6 +652,12 @@ footer {
   display: inline;
 }
 
-.menu-footer a {
+.menu-footer a, i {
   padding: 0rem 0.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+ .menu-footer li {
+   display: none;
+}
 }

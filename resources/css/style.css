@@ -5,10 +5,7 @@ html {
 }
 body {
   font-family: 'Helvetica', "Arial", "sans-serif";
-  /*font-family: "Josefin sans", "Helvetica", "sans-serif";*/
-  /*background-color: #dfdfdf;*/
-  /*background-color: #3f7361;*/
-  background-color: #204056;*/
+  background-color: #204056;
 }
 
 @media only screen and (max-width: 560px) {
@@ -19,7 +16,6 @@ body {
 
 h1 {
   font-size: 2.2rem;
-  /*font-weight: bold;*/
   text-transform: uppercase;
   font-family: "Josefin sans", "Helvetica", "sans-serif";
 }
@@ -434,7 +430,6 @@ header {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 0;
-  /*background-color: #0d0d0d;*/
   background-color: #09100e;
   color: white;
   }
